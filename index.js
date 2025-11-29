@@ -1,4 +1,4 @@
-const { fs } = require("fs-extra");
+const fs = require("fs-extra");
 
 const publication = process.env.INPUT_HASHNODE_URL;
 const maxPosts = Number(process.env.INPUT_MAX_POST_COUNT) || 5;
