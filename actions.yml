@@ -1,0 +1,19 @@
+name: "Hashnode Fetcher"
+description: "Fetch latest Hashnode posts and update README"
+inputs:
+  max_post_count:
+    description: "Number of posts"
+    required: true
+  hashnode_url:
+    description: "Hashnode blog url without https://"
+    required: true
+  updateReadMe:
+    description: "If you want to update the README file, pass true else false"
+    required: true
+  readmePath:
+    description: "README file path"
+    required: false
+
+runs:
+  using: "node20"
+  main: "index.js"

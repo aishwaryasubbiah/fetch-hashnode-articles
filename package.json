@@ -1,0 +1,15 @@
+{
+  "name": "fetch-hashnode-articles",
+  "version": "1.0.0",
+  "description": "It fetches the article from hashnode for the given rss url",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "fs-extra": "^11.3.2"
+  }
+}
