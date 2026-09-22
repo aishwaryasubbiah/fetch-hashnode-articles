@@ -20,7 +20,7 @@ async function run() {
     }
   }`;
 
-  const res = await fetch("https://gql.hashnode.com", {
+  const res = await fetch("https://gql.hashnode.com/", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ query })
@@ -28,7 +28,7 @@ async function run() {
 
   const json = await res.json();
 
-  if(json !== null || json !== undefined) {
+  if(json !== null && json !== undefined) {
     const posts = json.data.publication.posts.edges;
   
     const markdown = posts
